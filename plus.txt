@@ -1,0 +1,22 @@
+  // useEffect(() => {
+  //   const onPageScroll = () => {
+  //     if (navbarRef.current) {
+  //       if (window.scrollY > 500) {
+  //         navbarRef.current.style.backgroundColor = "rgba(48, 155, 255, 0.5)";
+  //         navbarRef.current.style.border = "none";
+  //         navbarRef.current.style.borderBottom = "3px solid white";
+  //         navbarRef.current.style.borderLeft = "3px solid white";
+  //         navbarRef.current.style.borderRight = "3px solid white";
+  //       } else {
+  //         navbarRef.current.style.backgroundColor = "rgba(0, 0, 0, 0.1)";
+  //         navbarRef.current.style.borderBottom = "4px solid white";
+  //       }
+  //     }
+  //   };
+
+  //   window.addEventListener("scroll", onPageScroll);
+
+  //   return () => {
+  //     window.removeEventListener("scroll", onPageScroll);
+  //   };
+  // }, []);
