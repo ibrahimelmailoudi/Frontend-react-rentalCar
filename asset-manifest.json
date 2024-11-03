@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/Frontend-react-rentalCar/static/css/main.65d4f52d.css",
-    "main.js": "/Frontend-react-rentalCar/static/js/main.48eb0466.js",
+    "main.js": "/Frontend-react-rentalCar/static/js/main.76671406.js",
     "static/media/car2.mp4": "/Frontend-react-rentalCar/static/media/car2.90a7858da8ec2ef87a6d.mp4",
     "static/media/car1.mp4": "/Frontend-react-rentalCar/static/media/car1.88f1637b7e5e566415fc.mp4",
     "static/media/car3.mp4": "/Frontend-react-rentalCar/static/media/car3.701774c451bd455daa13.mp4",
@@ -93,10 +93,10 @@
     "index.html": "/Frontend-react-rentalCar/index.html",
     "static/media/getFetch.cjs": "/Frontend-react-rentalCar/static/media/getFetch.c4cca45e22bc1b2c7d0d.cjs",
     "main.65d4f52d.css.map": "/Frontend-react-rentalCar/static/css/main.65d4f52d.css.map",
-    "main.48eb0466.js.map": "/Frontend-react-rentalCar/static/js/main.48eb0466.js.map"
+    "main.76671406.js.map": "/Frontend-react-rentalCar/static/js/main.76671406.js.map"
   },
   "entrypoints": [
     "static/css/main.65d4f52d.css",
-    "static/js/main.48eb0466.js"
+    "static/js/main.76671406.js"
   ]
 }
