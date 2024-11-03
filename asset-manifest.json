@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/Frontend-react-rentalCar/static/css/main.65d4f52d.css",
-    "main.js": "/Frontend-react-rentalCar/static/js/main.29189191.js",
+    "main.js": "/Frontend-react-rentalCar/static/js/main.14aee180.js",
     "static/media/pexels-7lat-8442905.jpg": "/Frontend-react-rentalCar/static/media/pexels-7lat-8442905.c8fe7325e2d1f768c488.jpg",
     "static/media/pexels-mikebirdy-244818.jpg": "/Frontend-react-rentalCar/static/media/pexels-mikebirdy-244818.0bba6e7043ef7afe67bd.jpg",
     "static/media/For portfolio.jpg": "/Frontend-react-rentalCar/static/media/For portfolio.660c36c55a2213d05db4.jpg",
@@ -90,10 +90,10 @@
     "index.html": "/Frontend-react-rentalCar/index.html",
     "static/media/getFetch.cjs": "/Frontend-react-rentalCar/static/media/getFetch.c4cca45e22bc1b2c7d0d.cjs",
     "main.65d4f52d.css.map": "/Frontend-react-rentalCar/static/css/main.65d4f52d.css.map",
-    "main.29189191.js.map": "/Frontend-react-rentalCar/static/js/main.29189191.js.map"
+    "main.14aee180.js.map": "/Frontend-react-rentalCar/static/js/main.14aee180.js.map"
   },
   "entrypoints": [
     "static/css/main.65d4f52d.css",
-    "static/js/main.29189191.js"
+    "static/js/main.14aee180.js"
   ]
 }
