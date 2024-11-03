@@ -1,3 +1,4 @@
+import React from "react";
 import SelectCar from "../images/plan/icon1.png";
 import Contact from "../images/plan/icon2.png";
 import Drive from "../images/plan/icon3.png";
@@ -36,8 +37,8 @@ function PlanTrip() {
                 <img src={Drive} alt="icon_img" />
                 <h3>Let's Drive</h3>
                 <p>
-                  Whether you're hitting the open road, we've got you covered
-                  with our wide range of cars
+                Whether you&apos;re hitting the open road, we&apos;ve got you covered
+                with our wide range of cars
                 </p>
               </div>
             </div>

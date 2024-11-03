@@ -7,8 +7,8 @@ import LoginForm from "../components/LoginForm";
 // import SocialAuth from "../components/SocialAuth";
 import Logo from "../components/Logo";
 import { motion } from "framer-motion";
-import backgroundImage from "../images/pexels-vladalex94-1461887.jpg";
 import NavLR from "../components/NavLR";
+import PropTypes from 'prop-types';
 
 //////////////////////////////////
 // Define global styles using css from @emotion/react
@@ -113,5 +113,7 @@ const Login = ({ setAuth }) => {
     </>
   );
 };
-
+Login.propTypes = {
+  setAuth: PropTypes.func.isRequired,
+};
 export default Login;

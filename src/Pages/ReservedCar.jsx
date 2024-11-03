@@ -68,9 +68,9 @@ const ReservedCar = () => {
         </Typography.Title>
         {reservedCars.length > 0 ? (
           <Row gutter={[16, 16]}>
-            {reservedCars.map((car) => (
-              <Col key={car.reservationId} span={8}>
-                <Card
+{reservedCars.map((car, index) => (
+  <Col key={car.id || `car-${index}`} span={8}>
+              <Card
                   hoverable
                   cover={
                     <img

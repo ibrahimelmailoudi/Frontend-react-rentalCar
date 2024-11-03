@@ -1,3 +1,4 @@
+import React from "react";
 import Footer from "../components/Footer";
 import HeroPages from "../components/HeroPages";
 import Testimonials from "../components/Testimonials";

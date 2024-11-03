@@ -1,3 +1,4 @@
+import React from "react";
 import { Link } from "react-router-dom";
 import logo from "../images/logo/Untitled-1-01.png";
 import styled from "@emotion/styled";

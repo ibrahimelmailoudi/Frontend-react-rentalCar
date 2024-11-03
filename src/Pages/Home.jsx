@@ -1,7 +1,5 @@
 import Hero from "../components/Hero";
 import SearchCarType from "../components/SearchCarType";
-import PlanTrip from "../components/PlanTrip";
-import PickCar from "../components/PickCar";
 import ChooseUs from "../components/ChooseUs";
 import Testimonials from "../components/Testimonials";
 import Faq from "../components/Faq";
@@ -14,6 +12,7 @@ import InfiniteScroll from "../components/InfiniteScroll";
 import Navbar from "../components/Navbar";
 import "../dist/styles.css";
 import { AuthContext } from "../Context/authContext";
+import React from "react";
 
 function Home() {
   const { currentUser } = useContext(AuthContext);

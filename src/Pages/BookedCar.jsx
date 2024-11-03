@@ -2,9 +2,9 @@ import React, { useContext, useEffect, useState } from "react";
 import { Row, Col, Card, Typography, Spin, Space, Button, message, Empty } from "antd";
 import { DeleteOutlined } from "@ant-design/icons";
 import axios from "axios";
-import Navbar from "../components/NavBarN";
 import { carData } from "./carData";
 import { AuthContext } from "../Context/authContext";
+import PropTypes from 'prop-types';
 
 const { Meta } = Card;
 
@@ -76,8 +76,8 @@ const BookedCar = () => {
         </Typography.Title>
         {reservedCars.length > 0 ? (
           <Row gutter={[16, 16]}>
-            {reservedCars.map((car) => (
-              <Col key={car.id} span={8}>
+{reservedCars.map((car, index) => (
+  <Col key={car.id || `car-${index}`} span={8}>
                 <Card
                   hoverable
                   cover={
@@ -109,11 +109,22 @@ const BookedCar = () => {
             ))}
           </Row>
         ) : (
-          <Empty description="No reserved cars yet" style={{marginTop:"110px"}}/>
+          <Empty description="No reserved cars yet" style={{ marginTop: "110px" }} />
         )}
       </div>
     </>
   );
+};
+BookedCar.propTypes = {
+  reservedCars: PropTypes.arrayOf(
+    PropTypes.shape({
+      id: PropTypes.number.isRequired,
+      name: PropTypes.string.isRequired,
+      image: PropTypes.string.isRequired,
+      price: PropTypes.number,
+      number: PropTypes.string,
+    })
+  ),
 };
 
 export default BookedCar;

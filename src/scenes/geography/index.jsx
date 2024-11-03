@@ -1,3 +1,4 @@
+import React from "react";
 import { Box, useTheme } from "@mui/material";
 import GeographyChart from "../../components/Dash/GeographyChart";
 import Header from "../../components/Dash/Header";

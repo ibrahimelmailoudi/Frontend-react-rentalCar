@@ -1,6 +1,9 @@
+import React from "react";
 import { createContext, useState, useEffect } from "react";
 import apiRequest from "../Api/apiRequest";
 import { useNavigate } from "react-router-dom";
+import PropTypes from 'prop-types';
+
 
 export const AuthContext = createContext();
 
@@ -53,4 +56,7 @@ export const AuthContextProvider = ({ children }) => {
       )}
     </AuthContext.Provider>
   );
+};
+AuthContextProvider.propTypes = {
+  children: PropTypes.node.isRequired,
 };

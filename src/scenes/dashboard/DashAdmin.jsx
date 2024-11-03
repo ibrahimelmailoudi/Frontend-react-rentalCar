@@ -1,3 +1,4 @@
+import React from "react";
 import { Box, Button, Typography, useTheme } from "@mui/material";
 import { tokens } from "../../styles/theme";
 import { mockTransactions } from "../../data/mockData";

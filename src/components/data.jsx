@@ -1,3 +1,4 @@
+import React from "react";
 import img1 from "../images/Cars/car11.png"
 import img2 from "../images/Cars/car22.png"
 import img3 from "../images/Cars/car1.png"

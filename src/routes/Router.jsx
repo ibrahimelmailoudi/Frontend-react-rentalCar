@@ -25,30 +25,30 @@ import AllCarsPage from "../Pages/AllCarPage";
 const Router = () => {
   return (
     <Routes>
-      <Route index path="/" element={<Home />} />
-      <Route path="/login" element={<Login />} />
-      <Route path="/signup" element={<Signup />} />
-      <Route path="/about" element={<About />} />
-      <Route path="/vehicule" element={<i />} />
+      <Route index path="/Frontend-react-rentalCar/" element={<Home />} />
+      <Route path="/Frontend-react-rentalCar/login" element={<Login />} />
+      <Route path="/Frontend-react-rentalCar/signup" element={<Signup />} />
+      <Route path="/Frontend-react-rentalCar/about" element={<About />} />
+      <Route path="/Frontend-react-rentalCar/vehicule" element={<i />} />
 
-      <Route path="/models" element={<Models />} />
-      <Route path="/testimonials" element={<TestimonialsPage />} />
-      <Route path="/team" element={<Team />} />
-      <Route path="/contact" element={<Contact />} />
-      <Route path="/unauthorized" element={<Unauthorized />} />/cars
-      <Route path="/cars" element={<AllCarsPage />} />
+      <Route path="/Frontend-react-rentalCar/models" element={<Models />} />
+      <Route path="/Frontend-react-rentalCar/testimonials" element={<TestimonialsPage />} />
+      <Route path="/Frontend-react-rentalCar/team" element={<Team />} />
+      <Route path="/Frontend-react-rentalCar/contact" element={<Contact />} />
+      <Route path="/Frontend-react-rentalCar/unauthorized" element={<Unauthorized />} />/cars
+      <Route path="/Frontend-react-rentalCar/cars" element={<AllCarsPage />} />
 
       <Route element={<ProtectedRoute />}>
-        <Route path="/payment/:carId" element={<PaymentPage />} />
+        <Route path="/Frontend-react-rentalCar/payment/:carId" element={<PaymentPage />} />
       </Route>
 
       <Route element={<UserProtectedRoute />}>
-        <Route path="/dashboard/User/*" element={<DashboardUser />} />
-        <Route path="/booking" element={<BookingPage />} />
+        <Route path="/Frontend-react-rentalCar/dashboard/User/*" element={<DashboardUser />} />
+        <Route path="/Frontend-react-rentalCar/booking" element={<BookingPage />} />
       </Route>
 
       <Route element={<AdminProtectedRoute />}>
-        <Route path="/dashboard/Admin/*" element={<DashboardAdmin />} />
+        <Route path="/Frontend-react-rentalCar/dashboard/Admin/*" element={<DashboardAdmin />} />
       </Route>
       <Route path="*" element={<NotFound />} />
     </Routes>

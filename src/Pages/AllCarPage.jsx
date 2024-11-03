@@ -2,7 +2,6 @@ import React, { useState, useEffect } from "react";
 import { Card, Row, Col, Spin } from "antd";
 import axios from "axios";
 import { useNavigate } from "react-router-dom";
-
 // Import car images
 import imgMercedesBenzGClass from "../images/Cars/Mercedes-Benz-G-Class.png";
 import imgMercedesBenzGLA from "../images/Cars/Mercedes-Benz-GLA.png";

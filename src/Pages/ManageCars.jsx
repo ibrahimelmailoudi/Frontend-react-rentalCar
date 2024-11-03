@@ -2,7 +2,6 @@ import React, { useEffect, useState } from "react";
 import { Table, Typography, Spin, Button, message, Modal, Input } from "antd";
 import { EditOutlined, DeleteOutlined } from "@ant-design/icons";
 import axios from "axios";
-import Navbar from "../components/NavBarN";
 import { carData } from "./carData";
 
 const ManageCars = () => {

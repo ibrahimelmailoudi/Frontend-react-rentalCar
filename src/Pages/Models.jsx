@@ -1,3 +1,4 @@
+import React from "react";
 import Footer from "../components/Footer";
 import HeroPages from "../components/HeroPages";
 import CarImg1 from "../images/cars-big/audi-box.png";

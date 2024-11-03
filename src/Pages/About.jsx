@@ -1,6 +1,7 @@
 import Footer from "../components/Footer";
 import HeroPages from "../components/HeroPages";
 import NavBarN from "../components/NavBarN";
+import React from "react";
 import PlanTrip from "../components/PlanTrip";
 import AboutMain from "../images/about/about-main.jpg";
 import Box1 from "../images/about/icon1.png";

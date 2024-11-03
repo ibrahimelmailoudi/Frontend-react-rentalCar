@@ -1,3 +1,4 @@
+import React from "react";
 import blog1 from "../images/BlogPost/blog-1.jpg"
 import blog2 from "../images/BlogPost/blog-2.jpg"
 import blog3 from "../images/BlogPost/blog-3.jpg"

@@ -2,6 +2,8 @@ import Footer from "../components/Footer";
 import HeroPages from "../components/HeroPages";
 import NavBarN from "../components/NavBarN";
 import "../dist/styles.css";
+import React from "react";
+
 function Contact() {
   return (
     <>

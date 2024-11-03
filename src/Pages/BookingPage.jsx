@@ -16,14 +16,10 @@ import {
 import {
   CarOutlined,
   DollarOutlined,
-  MenuOutlined,
   StarOutlined,
 } from "@ant-design/icons";
-import logo from "../images/logo/LOGOCAR.png";
+import React from "react";
 
-import NavLR from "../components/NavLR";
-import { Box } from "@mui/material";
-import axios from "axios";
 import { useNavigate } from "react-router-dom";
 import { AuthContext } from "../Context/authContext";
 import { carData } from "./carData";

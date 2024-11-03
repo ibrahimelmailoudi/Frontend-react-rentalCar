@@ -1,3 +1,4 @@
+import React from "react";
 import { Box } from "@mui/material";
 import Header from "../../components/Dash/Header";
 import BarChart from "../../components/Dash/BarChart";

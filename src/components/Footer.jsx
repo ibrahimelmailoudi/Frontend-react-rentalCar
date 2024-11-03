@@ -93,7 +93,7 @@ function Footer() {
 
         <div className="footer-section">
           <h3>Subscribe</h3>
-          <p>Stay in the driver's seat of our latest offers and updates. Sign up now for exclusive deals and news tailored just for you!</p>
+          <p>Stay in the driver&apos;s seat of our latest offers and updates. Sign up now for exclusive deals and news tailored just for you!</p>
           <div className='email-btn-sbt' style={{ display: 'flex' }}>
           <i className="fa-solid fa-envelope"></i>            
           <input 

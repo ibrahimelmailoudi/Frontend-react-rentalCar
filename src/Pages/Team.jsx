@@ -1,3 +1,4 @@
+import React from "react";
 import Footer from "../components/Footer";
 import HeroPages from "../components/HeroPages";
 import Person1 from "../images/testimonials/photo_2024-01-20_00-35-40.jpg";
