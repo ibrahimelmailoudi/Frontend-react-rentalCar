@@ -1,17 +1,17 @@
-# Rental Car Application - MERN Stack
+# Rental Car Application - Frontend (React)
 
-Welcome to the Rental Car Application! This project is built using the MERN stack (MongoDB, Express.js, React.js, Node.js) to create a full-featured car rental service platform.
+Welcome to the Rental Car Application! This project is the frontend portion of a comprehensive car rental service platform built using React.js.
 
 ## Demo
 Experience the application firsthand:
 - **Live Demo**: [Visit here](#) (Add the link to your deployed app)
 
 ## Features
-- **User Authentication**: Secure JWT-based user login and registration.
-- **Car Browsing**: Users can browse and search for available cars.
-- **Booking Management**: Create, view, update, and delete car reservations.
-- **Admin Panel**: Manage car listings and reservations with dedicated admin functionalities.
 - **Responsive Design**: Optimized for both desktop and mobile devices.
+- **User Interface**: Interactive and user-friendly design using Ant Design components.
+- **Car Browsing**: Users can browse and search for available cars.
+- **Booking Management**: Interfaces for creating, viewing, updating, and deleting car reservations.
+- **Modern Animations**: Smooth and appealing UI transitions.
 
 ## Technologies
 
@@ -19,14 +19,8 @@ Experience the application firsthand:
 - **React.js**: For building a dynamic and interactive user interface.
 - **Ant Design**: To create sleek, professional UI components.
 - **React Router**: For efficient client-side routing.
-- **Axios**: To handle HTTP requests.
-
-### Backend
-- **Node.js**: Server-side runtime environment.
-- **Express.js**: Web framework for building RESTful APIs.
-- **MongoDB**: Database for storing user data, car listings, and reservations.
-- **Mongoose**: ODM for MongoDB.
-- **JWT (JSON Web Tokens)**: For secure user authentication.
+- **Axios**: To handle HTTP requests for data fetching.
+- **Tailwind CSS**: (Optional) For additional styling.
 
 ## Setup
 To get this project running on your local machine:
@@ -34,95 +28,110 @@ To get this project running on your local machine:
 ### Prerequisites
 Ensure you have the following installed:
 - **Node.js** (v14 or higher)
-- **MongoDB** (local instance or Atlas)
 - **Git**
 
 ### Installation
 1. **Clone the repository**:
    ```bash
    git clone [repository-url]
-   cd rental-car-app
+   cd rental-car-frontend
    ```
 
-2. **Set up the backend**:
-   - Navigate to the `backend` directory:
-     ```bash
-     cd backend
-     ```
-   - Install dependencies:
-     ```bash
-     npm install
-     ```
-   - Create a `.env` file with the following variables:
-     ```env
-     MONGO_URI=mongodb://localhost:27017/rentalCarDB
-     JWT_SECRET=your_jwt_secret
-     PORT=5000
-     ```
-   - Add the JWT authentication code to your `backend/controllers/userController.js` or similar file:
-     ```javascript
-     const jwt = require('jsonwebtoken');
+2. **Install dependencies**:
+   ```bash
+   npm install
+   ```
 
-     const generateToken = (userId) => {
-       return jwt.sign({ id: userId }, process.env.JWT_SECRET, {
-         expiresIn: '30d',
-       });
-     };
+3. **Create a `.env` file** for environment-specific configurations:
+   ```env
+   REACT_APP_API_URL=http://localhost:5000/api
+   ```
 
-     module.exports = generateToken;
-     ```
-   - Start the server:
-     ```bash
-     npm start
-     ```
-   The backend server runs on `http://localhost:5000`.
-
-3. **Set up the frontend**:
-   - Navigate to the `frontend` directory:
-     ```bash
-     cd ../frontend
-     ```
-   - Install dependencies:
-     ```bash
-     npm install
-     ```
-   - Create a `.env` file for API configurations.
-   - Start the development server:
-     ```bash
-     npm start
-     ```
-   The frontend runs on `http://localhost:3000`.
-
-## Usage
-### Running the Application
-Ensure MongoDB is running locally or connected via MongoDB Atlas:
-1. Start the backend server.
-2. Start the frontend server.
-3. Access the app at `http://localhost:3000`.
-
-### User Roles
-- **User**: Browse, book, and manage car reservations.
-- **Admin**: Manage car listings and view all reservations.
+4. **Start the development server**:
+   ```bash
+   npm start
+   ```
+   The application should be running on `http://localhost:3000`.
 
 ## Project Structure
 ```plaintext
-rental-car-app/
-├── backend/
-│   ├── config/
-│   ├── controllers/
-│   ├── models/
-│   ├── routes/
-│   ├── server.js
-│   └── package.json
-├── frontend/
-│   ├── public/
-│   ├── src/
-│   │   ├── components/
-│   │   ├── pages/
-│   │   ├── App.js
-│   │   ├── index.js
-│   │   └── package.json
-└── README.md
+rental-car-frontend/
+├── Api/
+├── components/
+│   ├── 1/
+│   │   └── reuseable/
+│   │       └── Layout/
+│   ├── Dash/
+│   └── scenes/
+│       ├── bar/
+│       ├── calendar/
+│       ├── contacts/
+│       ├── dashboard/
+│       ├── faq/
+│       ├── form/
+│       ├── geography/
+│       ├── global/
+│       ├── invoices/
+│       ├── line/
+│       ├── pie/
+│       └── team/
+├── Context/
+├── data/
+├── dist/
+├── images/
+│   ├── about/
+│   ├── banners/
+│   ├── BlogPost/
+│   ├── book-car/
+│   ├── BrandCar/
+│   │   └── new/
+│   ├── Cars/
+│   ├── cars-big/
+│   ├── chooseUs/
+│   ├── Default/
+│   ├── faq/
+│   ├── hero/
+│   ├── logo/
+│   ├── plan/
+│   ├── profileImg/
+│   ├── team/
+│   └── testimonials/
+├── Pages/
+├── routes/
+├── scenes/
+│   ├── bar/
+│   ├── calendar/
+│   ├── contacts/
+│   ├── dashboard/
+│   ├── faq/
+│   ├── form/
+│   ├── geography/
+│   ├── global/
+│   ├── Help/
+│   ├── invoices/
+│   ├── line/
+│   ├── pie/
+│   ├── Settings/
+│   │   └── sections/
+│   └── team/
+├── styles/
+│   ├── AboutStyles/
+│   ├── BannerStyles/
+│   ├── BookStyles/
+│   ├── ChooseStyles/
+│   ├── ContactStyles/
+│   ├── DownloadStyles/
+│   ├── FaqStyles/
+│   ├── FooterStyles/
+│   ├── global/
+│   ├── HeroStyles/
+│   ├── ModelsStyles/
+│   ├── NavbarStyles/
+│   ├── PickStyles/
+│   ├── PlanTripStyles/
+│   ├── TeamStyles/
+│   └── TestimonialsStyles/
+└── Videos/
 ```
 
 ## Contributing
